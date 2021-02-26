@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LMS.WebAPI.Data;
 using LMS.WebAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LMS.WebAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ClientsController : ControllerBase
